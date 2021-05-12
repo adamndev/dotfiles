@@ -20,12 +20,14 @@ Contains:
 
 On fresh installation of MacOS:
 
+```bash
 mkdir p ~/projects/dotfiles && cd ~/projects/dotfiles
 git clone https://github.com/adamndev/dotfiles.git ~/projects/dotfiles
 cd ~/projects/dotfiles/install
 chmod +wx install.sh
 chmod -R +wx ~/projects/dotfiles/bin
 ./install.sh
+```
 
 ## Additional steps
 
