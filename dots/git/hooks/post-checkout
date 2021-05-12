@@ -1,0 +1,16 @@
+#/usr/bin/env bash
+# https://gist.github.com/GianlucaGuarini/8001627
+
+# changed_files="$(git diff-tree -r --name-only --no-commit-id $1 $2)"
+
+# check_run() {
+#   echo "$changed_files" | grep -E --quiet "$1" && eval "$2"
+# }
+
+# `npm install` and `npm prune` if the `package.json` file gets changed
+# to update all the npm dependencies deleting the unused packages (not listed into the ß`package.json` file)
+# check_run package.json "npm install && npm prune"
+
+# `composer install` if the `composer.json` file gets changed
+# to update all the php dependencies
+# check_run composer "sudo composer install"

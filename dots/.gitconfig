@@ -1,0 +1,32 @@
+[user]
+	name = Adam N
+	email = adam@laradev.co.uk
+[github]
+  user = adamndev
+[core]
+	excludesfile = ~/.gitignore_global
+	hooksPath = ~/.git/hooks
+[alias]
+  a = "add ."
+  c = commit
+  p = push
+  s = status -sb
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  m = !"bash -c 'git branch | grep -v 'master' | xargs git branch -D'"
+  nah = !"bash -c 'git reset --hard && git clean -df'"
+  main = checkout main
+  yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+  joke = !git commit -m \"$(curl -s https://icanhazdadjoke.com)\"
+  f = !"bash -c 'git checkout -b feature/$0'"
+[pull]
+	rebase = false
+# [difftool "sourcetree"]
+# 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+# 	path = 
+# [mergetool "sourcetree"]
+# 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+# 	trustExitCode = true
+# [commit]
+# 	template = /Users/nipid/.stCommitMsg
+[init]
+  defaultBranch = main

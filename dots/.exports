@@ -1,0 +1,12 @@
+export EDITOR=nano
+
+export NVM_DIR="$HOME/.nvm"
+
+DOTFILES_EXPORT="$HOME/dotfiles/bin"
+LOCAL_BIN_EXPORT="/usr/local/bin"
+LOCAL_SBIN_EXPORT="/usr/local/sbin"
+COMPOSER_BIN_EXPORT="$HOME/.composer/vendor/bin"
+SQLITE_BIN_EXPORT="/usr/local/opt/sqlite/bin"
+COMPOSER_MEMORY_LIMIT="-1"
+
+export PATH="$DOTFILES_EXPORT:$LOCAL_BIN_EXPORT:$LOCAL_SBIN_EXPORT:$COMPOSER_BIN_EXPORT:$SQLITE_BIN_EXPORT:$PATH"
