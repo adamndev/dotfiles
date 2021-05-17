@@ -1,4 +1,4 @@
-# Install Homebrew 
+# Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 brew upgrade
@@ -98,7 +98,6 @@ brew install --cask aws-vault
 brew install --cask appcleaner
 brew install --cask hiddenbar
 brew install --cask numi
-brew install --cask forklift
 brew install --cask the-unarchiver
 brew install --cask apple-juice && xattr -cr '/Applications/Apple Juice.app'
 
