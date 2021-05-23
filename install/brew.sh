@@ -7,6 +7,7 @@ brew upgrade
 brew tap homebrew/core
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
+brew tap shopify/shopify
 
 # Install packages
 brew install mackup
@@ -32,6 +33,7 @@ brew install terminal-notifier
 brew install awscli
 brew install nginx
 brew install composer
+brew install shopify-cli
 brew install zsh
 brew install zsh-completions
 brew install autojump
@@ -92,6 +94,7 @@ brew install --cask ray
 brew install --cask tuple
 
 # CLI
+
 brew install --cask aws-vault
 
 # Other
