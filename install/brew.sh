@@ -55,12 +55,10 @@ echo "Success! Basic brew packages are installed."
 # Security
 brew install --cask lastpass
 
-# Files
-brew install --cask gpg-suite
+# Other
 brew install --cask dropbox
 brew install --cask g-desktop-suite
 brew install --cask grammarly
-brew install --cask raycast
 brew install --cask spotify
 brew install --cask vlc
 
@@ -78,7 +76,7 @@ brew install --cask google-chrome
 brew install --cask firefox-developer-edition
 
 # Development
-brew install --cask alfred
+brew install --cask raycast
 brew install --cask iterm2
 brew install --cask caffeine
 brew install --cask ngrok
