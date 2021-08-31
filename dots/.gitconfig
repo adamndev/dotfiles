@@ -1,12 +1,12 @@
 [user]
-	name = Adam N
-	email = adam@laradev.co.uk
+	name = Adam
+	email = adam.rp.nimmo@gmail.com
 [github]
   user = adamndev
 [core]
 	excludesfile = ~/.gitignore_global
 	hooksPath = ~/.git/hooks
-  editor = code --wait
+  editor = code-insiders --wait
 [alias]
   a = "add ."
   c = commit

@@ -1,12 +1,16 @@
 module.exports = {
-    rules: {
-        // indent: 'off',
+  rules: {
+    // indent: 'off',
+  },
+  parserOptions: {
+    ecmaVersion: 2020,
+    ecmaFeatures: {
+      experimentalDecorators: true,
+      jsx: true,
     },
-    parserOptions: {
-        ecmaVersion: 2020,
-    },
-    extends: ['plugin:vue/base'],
-    env: {
-        es6: true,
-    },
+  },
+  extends: ['plugin:vue/base'],
+  env: {
+    es6: true,
+  },
 };
