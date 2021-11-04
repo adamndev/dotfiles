@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH="/usr/local/sbin:$HOME/.composer/vendor/bin:/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export XDEBUG_CONFIG="idekey=VSCODE"
@@ -85,8 +85,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -108,15 +106,12 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 alias zsource="source ~/.zshrc"
 alias zconfig="code-insiders ~/.zshrc"
 
-alias pa="php artisan"
 alias tinker='php artisan tinker'
-
-alias sa='sail artisan'
 alias artisan='php artisan'
-alias sail='bash vendor/bin/sail'
-alias sailrestart='sail down --rmi all -v'
+
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 alias stinker='sail artisan tinker'
-alias sailscratch='sail down --rmi all -v'
+alias sailscrap='sail down --rmi all -v'
 
 alias phpunit="./vendor/bin/phpunit"
 alias phprs="brew services restart php"
@@ -139,17 +134,16 @@ alias .....="cd ../../../.."
 alias -- -="cd -"
 
 # Shortcuts
+alias lib="cd $HOME/Library"
 alias dbox="cd $HOME/Dropbox"
+alias dtop="cd $HOME/Desktop"
+alias proj="cd $HOME/projects"
 alias dls="cd $HOME/Downloads"
 alias dotfiles="cd $HOME/projects/dotfiles"
-alias dtop="cd $HOME/Desktop"
-alias lib="cd $HOME/Library"
-alias proj="cd $HOME/projects"
-alias simba="cd $HOME/simba" # Simba
+
+alias editphpini="code-insiders /opt/homebrew/etc/php/8.0/php.ini"
 
 eval $(thefuck --alias)
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 source $ZSH/oh-my-zsh.sh
+
