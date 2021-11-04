@@ -13,8 +13,7 @@ Contains:
 5. `ProFont for Powerline` used in iTerm2
 6. Packages / CLI (brew, brew cask, openssl, composer, php 7.2, php 8.0, git, nvm with node/npm, LTS node with latest working npm, thefuck, wget, zsh, zsh-completions)
 7. Applications (raycast, google-chrome, slack, spotify, vlc, vscode, sequel-pro, insomnia, iterm2, lastpass, appcleaner, zoom)
-8. [Valet for web development](https://github.com/laravel/valet)
-9. `dotfiles` binary to manage dotfiles functions with autocomplete
+8. `dotfiles` binary to manage dotfiles functions with autocomplete
 
 ## Install
 
@@ -49,7 +48,6 @@ chmod -R +wx ~/projects/dotfiles/bin
        composer         Run composer script
        node             Run node setup script
        npm              Run npm setup script
-       valet            Run valet script
        php              Run php script
        xdebug           Run xdebug script
        zsh              Run oh my zsh script
