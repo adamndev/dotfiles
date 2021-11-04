@@ -39,6 +39,7 @@ brew install zsh-completions
 brew install autojump
 brew install thefuck
 brew install cmatrix
+brew install svn
 
 echo "Installing fonts"
 brew install --cask font-fira-code
