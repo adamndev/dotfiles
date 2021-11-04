@@ -80,7 +80,6 @@ brew install --cask firefox-developer-edition
 # Development
 brew install --cask raycast
 brew install --cask iterm2
-brew install --cask caffeine
 brew install --cask ngrok
 brew install --cask visual-studio-code
 brew install --cask visual-studio-code-insiders
