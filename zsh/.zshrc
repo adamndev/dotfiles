@@ -1,5 +1,10 @@
-# If you come from bash you might have to change your $PATH.
-export PATH="/opt/homebrew/bin:$PATH"
+if [[ `uname -m` == 'arm64' ]];
+  then
+    export PATH="/opt/homebrew/bin:$PATH" # Apple chip
+  else
+    export PATH="/usr/local/sbin:$PATH" # Intel chip
+fi
+
 
 # Path to your oh-my-zsh installation.
 export XDEBUG_CONFIG="idekey=VSCODE"
@@ -146,4 +151,3 @@ alias editphpini="code-insiders /opt/homebrew/etc/php/8.0/php.ini"
 eval $(thefuck --alias)
 
 source $ZSH/oh-my-zsh.sh
-
