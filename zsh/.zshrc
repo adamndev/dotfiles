@@ -1,3 +1,9 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
+
 if [[ `uname -m` == 'arm64' ]];
   then
     export PATH="/opt/homebrew/bin:$PATH" # Apple chip
@@ -151,3 +157,8 @@ alias editphpini="code-insiders /opt/homebrew/etc/php/8.0/php.ini"
 eval $(thefuck --alias)
 
 source $ZSH/oh-my-zsh.sh
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
