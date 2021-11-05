@@ -1,4 +1,3 @@
-
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the start of this file.
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
@@ -10,7 +9,6 @@ if [[ `uname -m` == 'arm64' ]];
   else
     export PATH="/usr/local/sbin:$PATH" # Intel chip
 fi
-
 
 # Path to your oh-my-zsh installation.
 export XDEBUG_CONFIG="idekey=VSCODE"
