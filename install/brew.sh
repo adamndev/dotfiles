@@ -93,7 +93,6 @@ brew install --cask ray
 brew install --cask tuple
 
 # CLI
-
 brew install --cask aws-vault
 
 # Other
@@ -114,6 +113,9 @@ brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatc
 sudo apachectl stop
 
 brew cleanup
+
+# Stop nginx service running on boot
+sudo brew services stop nginx
 
 # Wait a bit before moving on...
 sleep 1
