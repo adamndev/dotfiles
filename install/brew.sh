@@ -3,13 +3,11 @@
 brew update
 brew upgrade
 
-# Taps
 brew tap homebrew/core
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 brew tap shopify/shopify
 
-# Install packages
 brew install mackup
 brew install dockutil
 brew install openssl
@@ -55,29 +53,18 @@ sleep 1
 # ...and then.
 echo "Success! Basic brew packages are installed."
 
-# Security
 brew install --cask lastpass
-
-# Other
 brew install --cask dropbox
 brew install --cask g-desktop-suite
 brew install --cask grammarly
 brew install --cask spotify
 brew install --cask vlc
-
-# Communication
 brew install --cask slack
 brew install --cask zoom
 brew install --cask discord
-
-# Design
 brew install --cask figma
-
-# Browsers
 brew install --cask google-chrome
 brew install --cask firefox-developer-edition
-
-# Development
 brew install --cask raycast
 brew install --cask iterm2
 brew install --cask ngrok
@@ -91,26 +78,18 @@ brew install --cask tableplus
 brew install --cask querious
 brew install --cask ray
 brew install --cask tuple
-
-# CLI
 brew install --cask aws-vault
-
-# Other
 brew install --cask appcleaner
-brew install --cask hiddenbar
 brew install --cask numi
 brew install --cask the-unarchiver
-brew install --cask apple-juice && xattr -cr '/Applications/Apple Juice.app'
-
-# Fonts
+brew install --cask fig
 brew install --cask font-hack-nerd-font
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook qlvideo
 
-# Stop local servers
-# sudo nginx -s stop
-sudo apachectl stop
+# Stop nginx on startup
+sudo brew services stop nginx
 
 brew cleanup
 
