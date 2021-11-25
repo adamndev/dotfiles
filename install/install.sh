@@ -19,12 +19,6 @@ tmutil snapshot
 # Install npm global packages
 . "$DOTFILES_DIR/install/npm.sh"
 
-# Install php
-. "$DOTFILES_DIR/install/php.sh"
-
-# Install xdebug
-#. "$DOTFILES_DIR/install/xdebug.sh"
-
 # Install oh my zsh
 . "$DOTFILES_DIR/install/zsh.sh"
 

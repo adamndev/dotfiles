@@ -39,6 +39,7 @@ brew install thefuck
 brew install cmatrix
 brew install svn
 brew install npm
+brew install php
 
 echo "Installing fonts"
 brew install --cask font-fira-code
