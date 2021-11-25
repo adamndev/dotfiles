@@ -17,11 +17,6 @@ export XDEBUG_CONFIG="idekey=VSCODE"
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Add Pure path
-fpath+=$HOME/.zsh/pure
-autoload -U promptinit; promptinit
-prompt pure
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -155,6 +150,11 @@ alias editphpini="code-insiders /opt/homebrew/etc/php/8.0/php.ini"
 eval $(thefuck --alias)
 
 source $ZSH/oh-my-zsh.sh
+
+# Add Pure path
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+prompt pure
 
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
