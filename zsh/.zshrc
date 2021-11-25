@@ -3,12 +3,7 @@
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 #### END FIG ENV VARIABLES ####
 
-if [[ `uname -m` == 'arm64' ]];
-  then
-    export PATH="/opt/homebrew/bin:$PATH" # Apple chip
-  else
-    export PATH="/usr/local/sbin:$PATH" # Intel chip
-fi
+export PATH=/opt/homebrew/bin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin:${PATH}
 
 # Path to your oh-my-zsh installation.
 export XDEBUG_CONFIG="idekey=VSCODE"
@@ -35,13 +30,13 @@ export ZSH=$HOME/.oh-my-zsh
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # Add Pure path
-fpath+=$HOME/.zsh/pure
-autoload -U promptinit; promptinit
-prompt pure
+# fpath+=$HOME/.zsh/pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
 HYPHEN_INSENSITIVE="true"
 DISABLE_UPDATE_PROMPT="true"
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 export UPDATE_ZSH_DAYS=1
 
@@ -110,7 +105,7 @@ alias dotfiles="cd $HOME/projects/dotfiles"
 
 alias editphpini="code-insiders /opt/homebrew/etc/php/8.0/php.ini"
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
 source $ZSH/oh-my-zsh.sh
 
