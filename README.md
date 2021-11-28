@@ -12,7 +12,7 @@ Contains:
 4. Custom [/etc/hosts](https://github.com/adamndev/dotfiles/blob/master/etc/hosts) file with blocked Ads, Trackers & 🔥 stuff on internet
 5. `ProFont for Powerline` used in iTerm2
 6. Packages / CLI (brew, brew cask, openssl, composer, php 7.2, php 8.0, git, nvm with node/npm, LTS node with latest working npm, thefuck, wget, zsh, zsh-completions)
-7. Applications (raycast, google-chrome, slack, spotify, vlc, vscode, sequel-pro, insomnia, iterm2, lastpass, appcleaner, zoom)
+7. Applications (raycast, google-chrome, slack, vlc, vscode, sequel-pro, insomnia, iterm2, lastpass, appcleaner, zoom)
 8. `dotfiles` binary to manage dotfiles functions with autocomplete
 
 ## Install

@@ -58,7 +58,6 @@ brew install --cask lastpass
 brew install --cask dropbox
 brew install --cask g-desktop-suite
 brew install --cask grammarly
-brew install --cask spotify
 brew install --cask vlc
 brew install --cask slack
 brew install --cask zoom
