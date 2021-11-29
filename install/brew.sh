@@ -22,7 +22,6 @@ brew install autoconf
 brew install pkg-config
 brew install redis
 brew install node
-brew install docker
 brew install docker-compose
 brew install vim
 brew install grep
