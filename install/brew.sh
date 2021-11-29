@@ -9,6 +9,7 @@ brew tap homebrew/cask-fonts
 brew tap shopify/shopify
 
 brew install mackup
+brew install fig
 brew install dockutil
 brew install openssl
 brew install nmap
