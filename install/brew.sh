@@ -70,6 +70,7 @@ brew install --cask iterm2
 brew install --cask ngrok
 brew install --cask visual-studio-code
 brew install --cask visual-studio-code-insiders
+brew install --cask phpstorm
 brew install --cask tinkerwell
 brew install --cask docker
 brew install --cask insomnia
