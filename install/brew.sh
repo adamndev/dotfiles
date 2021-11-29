@@ -9,7 +9,6 @@ brew tap homebrew/cask-fonts
 brew tap shopify/shopify
 
 brew install mackup
-brew install fig
 brew install dockutil
 brew install openssl
 brew install nmap
@@ -23,7 +22,6 @@ brew install autoconf
 brew install pkg-config
 brew install redis
 brew install node
-brew install docker
 brew install docker-compose
 brew install vim
 brew install grep
