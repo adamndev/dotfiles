@@ -1,6 +1,6 @@
 [user]
 	name = Adam
-	email = adam.rp.nimmo@gmail.com
+  email = adam.rp.nimmo@gmail.com
 [github]
   user = adamndev
 [core]
@@ -31,3 +31,5 @@
 # 	template = /Users/nipid/.stCommitMsg
 [init]
   defaultBranch = main
+[safe]
+	directory = /Users/adam/.nvm

@@ -1,9 +1,6 @@
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
-
-export PATH=/opt/homebrew/bin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin:${PATH}
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+export PATH=/opt/homebrew/bin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin:~/.composer/vendor/bin/:${PATH}
 
 # Path to your oh-my-zsh installation.
 export XDEBUG_CONFIG="idekey=VSCODE"
@@ -11,12 +8,6 @@ export XDEBUG_CONFIG="idekey=VSCODE"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -42,7 +33,6 @@ export UPDATE_ZSH_DAYS=1
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
-
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -105,7 +95,8 @@ alias dotfiles="cd $HOME/projects/dotfiles"
 
 alias editphpini="code-insiders /opt/homebrew/etc/php/8.0/php.ini"
 
-# eval $(thefuck --alias)
+alias sshpoddev="ssh forge@35.178.126.122 -i /Users/adam/.ssh/id_rsa"
+alias sshpodprod="ssh forge@18.134.9.115 -i /Users/adam/.ssh/id_rsa"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,7 +105,22 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bit
+export PATH="$PATH:/Users/adam/bin"
+# bit end
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# pnpm
+export PNPM_HOME="/Users/adam/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

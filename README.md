@@ -9,7 +9,7 @@ These are the dotfiles and configurations I use to set up my development machine
 On fresh installation of MacOS:
 
 ```bash
-mkdir p ~/projects/dotfiles && cd ~/projects/dotfiles
+mkdir -p ~/projects/dotfiles && cd ~/projects/dotfiles
 git clone https://github.com/adamndev/dotfiles.git ~/projects/dotfiles
 cd ~/projects/dotfiles/install
 chmod +wx install.sh
@@ -21,7 +21,6 @@ chmod -R +wx ~/projects/dotfiles/bin
 
 - setup Dropbox
 - Setup Fig
-- mackup restore
 
 ## Credits
 

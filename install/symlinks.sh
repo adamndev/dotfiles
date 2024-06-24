@@ -10,7 +10,6 @@ ln -sfv "$DOTFILES_DIR/dots/.editorconfig" ~
 ln -sfv "$DOTFILES_DIR/dots/.eslintrc.js" ~
 ln -sfv "$DOTFILES_DIR/dots/.prettierrc.js" ~
 ln -sfv "$DOTFILES_DIR/dots/.stylelintrc" ~
-ln -sfv "$DOTFILES_DIR/dots/.mackup.cfg" ~
 ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
 
 # mkdir -p ~/.git/hooks
